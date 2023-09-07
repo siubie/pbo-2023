@@ -1,10 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Komentar komentarBaik = new Komentar("Nama", "Email", "Komentar Baik");
-        Komentar komentarPedes = new Komentar("Nama", "Email", "Komentar Pedes");
-
-        BukuTamu bukuTamu = new BukuTamu();
-        bukuTamu.addKomentar(komentarBaik);
-        bukuTamu.addKomentar(komentarPedes);
+        //1. dilengkapi code untuk menu nya
+        //2. Analisa apakah class BukuTamu dan Komentar sudah sesuai mengikuti konsep
+        // Encapsulasi yang benar atau tidak
     }
 }

@@ -23,6 +23,14 @@ public class BukuTamu {
         this.komentar.add(komentar);
     }
 
+    public void printKomentar(){
+        for (Komentar komentar : komentar) {
+            System.out.println(komentar.getNama());
+            System.out.println(komentar.getEmail());
+            System.out.println(komentar.getKomentar());
+        }
+    }
+
     @Override
     public String toString() {
         return "BukuTamu{" +
