@@ -17,14 +17,10 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Masukkan nama Anda: ");
-                    String name = scanner.nextLine();
-                    System.out.print("Masukkan pesan Anda: ");
-                    String message = scanner.nextLine();
-                    System.out.println("Entri baru telah ditambahkan.");
+                    addBukuTamu(scanner, bukuPengunjung);
                     break;
                 case 2:
-                    System.out.println("Daftar Buku Tamu:");
+                    lihatBukuTamu(bukuPengunjung);
                     break;
                 case 3:
                     System.out.println("Terima kasih! Program selesai.");
@@ -34,5 +30,20 @@ public class Main {
                     System.out.println("Pilihan tidak valid. Silakan pilih 1, 2, atau 3.");
             }
         }
+    }
+
+    private static void lihatBukuTamu(BukuPengunjung bukuPengunjung) {
+        bukuPengunjung.printTamu();
+    }
+
+    private static void addBukuTamu(Scanner scanner, BukuPengunjung bukuPengunjung) {
+        System.out.print("Masukkan nama Anda: ");
+        String nama = scanner.nextLine();
+        System.out.print("Masukkan alamat Anda: ");
+        String alamat = scanner.nextLine();
+        System.out.print("Masukkan nomor hp: ");
+        String nomor_hp = scanner.nextLine();
+        Tamu tamuBaru = new Tamu(nama,alamat,nomor_hp);
+        bukuPengunjung.addTamu(tamuBaru);
     }
 }
