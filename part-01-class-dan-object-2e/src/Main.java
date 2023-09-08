@@ -1,5 +1,14 @@
 import java.util.Scanner;
 
+//todo : 1 kasi try catch biar ga error
+//todo : 2 user pengen di format tampilan cetak nya
+// =============================
+// nama
+// alamat
+// nomor hp
+// =============================
+//todo : 3 setelah seminggu client minta ditambahkan field baru yaitu komentar.
+
 public class Main {
     public static void main(String[] args) {
         BukuPengunjung bukuPengunjung = new BukuPengunjung();
