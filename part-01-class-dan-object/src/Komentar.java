@@ -1,6 +1,7 @@
 public class Komentar {
     private String nama,email,komentar;
 
+
     public Komentar() {
     }
 
@@ -9,6 +10,7 @@ public class Komentar {
         this.email = email;
         this.komentar = komentar;
     }
+
 
     public String getNama() {
         return nama;
